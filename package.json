@@ -1,0 +1,11 @@
+{
+  "name": "bblog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hana-ptit/bblog.git",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.32.3"
+  },
+  "scripts": {}
+}
