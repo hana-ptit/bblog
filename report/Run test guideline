@@ -1,5 +1,0 @@
-Running all tests: yarn playwright test
-
-Running a single test file: yarn playwright test article.spec.ts
-
-Run the test with the title: yarn playwright test -g "Create - Verify user can create new article"

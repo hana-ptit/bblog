@@ -2,12 +2,14 @@
 # Backbase Web Automation - Playwright
 
 ## Get Start 
-- Install dependencies: npm ci
+- Install dependencies: npm install
 - Install Playwright Browsers: npx playwright install --with-deps
 
 ## Run Test
-- To trigger automation test for regression: npm run test:regression
-- To trigger automation test for specific tag: npx playwright test --workers 16 --grep @{{tag_name}}
+- To trigger automation all tests: npx playwright test
+- To trigger automation a single test file: npx playwright test {{filepath}} , example: playwright test article.spec.ts
+- To trigger automation the test with the title: npx playwright test -g {{testtile}}, example: npx playwright test -g "Create - Verify user can create new article"
+- To trigger automation test for specific tag: npx playwright test --grep "@{{tag_name}}", example: npx playwright test --grep "@CURD"
 
 ## CI - Github action
 - CI flow will be triggered whenever have the pull request to main branch

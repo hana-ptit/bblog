@@ -19,7 +19,7 @@ test.beforeEach(async ({ pageObjects: { homePage, logInPage } }) => {
     });
 });
 describe('CRUD Article', () => {
-    test('Create - Verify user can create new article', async ({
+    test('Create - Verify user can create new article @CURD', async ({
         pageObjects: { homePage, createArticlePage, articleDetailPage, profilePage }, page
     }) => {
 
@@ -43,7 +43,7 @@ describe('CRUD Article', () => {
         })
     });
 
-    test('Edit - Verify user can edit the article', async ({
+    test('Edit - Verify user can edit the article @CURD', async ({
         pageObjects: { homePage, createArticlePage, articleDetailPage, profilePage },
     }) => {
 
@@ -90,7 +90,7 @@ describe('CRUD Article', () => {
     });
 
 
-    test('Delete - Verify user can delete the new article', async ({
+    test('Delete - Verify user can delete the new article @CURD', async ({
         pageObjects: { homePage, createArticlePage, articleDetailPage, profilePage }, page
     }) => {
 
@@ -120,7 +120,7 @@ describe('CRUD Article', () => {
 
     });
 
-    test('Verify user can delete comment successfully', async ({
+    test('Verify user can delete comment successfully @CURD', async ({
         pageObjects: { homePage, articleDetailPage },
     }) => {
 
